@@ -504,3 +504,16 @@
 	font-size: 12px;
 }
 /* end product list */
+
+/* special product */
+.sp-item-name {
+	font-size: 35px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.sp-item-description {
+	margin-bottom: 60px;
+	text-align: justify;
+}
+/* end special product */
