@@ -352,3 +352,42 @@
 }
 /* end slide animation */
 /* end hero section */
+
+/* promotion section */
+.promotion,
+.promotion [class*='col-'] {
+	padding: 15px;
+}
+
+.promotion-box {
+	display: flex;
+	background-color: var(--second-bg-color);
+	border-radius: 5px;
+}
+
+.promotion-box .text {
+	flex-grow: 1;
+	padding: 20px;
+}
+
+.promotion-box .text h3 {
+	font-size: 20px;
+}
+
+.promotion-box .text p {
+	margin-top: 10px;
+}
+
+.promotion-box img {
+	width: 130px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.promotion-box:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.promotion-box:hover img {
+	transform: scale(1.1);
+}
+/* end promotion section */
