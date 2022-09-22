@@ -521,7 +521,6 @@
 
 .sp-item-description {
 	margin-bottom: 60px;
-	text-align: justify;
 }
 /* end special product */
 
@@ -546,7 +545,6 @@
 }
 
 .blog-preview {
-	text-align: justify;
 	margin-bottom: 50px;
 }
 /* end blogs */
@@ -760,13 +758,39 @@ footer ul li {
 }
 
 @media only screen and (max-width: 750px) {
+	.search {
+		width: 100%;
+	}
+
 	.hero {
 		height: calc(var(--slider-size) - 30vh);
+	}
+
+	.slide > .img > img {
+		max-width: 250px;
 	}
 
 	.info-content h2 {
 		margin: 10px;
 		font-size: 35px;
+	}
+
+	.info-content p {
+		display: none;
+	}
+
+	.slide-prev,
+	.slider:hover .slide-prev {
+		left: 35%;
+	}
+
+	.slide-next,
+	.slider:hover .slide-next {
+		right: 35%;
+	}
+
+	.blog-info {
+		padding: 20px;
 	}
 }
 /* end responsive */
