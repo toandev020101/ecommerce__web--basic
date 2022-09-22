@@ -188,3 +188,167 @@
 	padding: 20px;
 }
 /* end header */
+
+/* hero section */
+.hero {
+	height: var(--slider-size);
+	padding: 0 20px;
+}
+
+.slider,
+.slider .container {
+	height: 100%;
+	position: relative;
+}
+
+.slide {
+	height: 100%;
+	position: absolute;
+	/* inset = top, right, bottom, left */
+	inset: 0;
+
+	display: flex;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.slide.active {
+	visibility: visible;
+}
+
+.slide .info {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.info-content > h2 {
+	font-size: 60px;
+	margin: 10px 0 35px;
+}
+
+.info-content button {
+	margin-top: 30px;
+}
+
+.slide .img {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	display: inline-block;
+	border: 2px solid var(--black-color);
+	background-color: var(--black-color);
+	color: var(--white-color);
+
+	outline: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn > a {
+	padding: 10px 25px;
+	font-size: 14px;
+}
+
+.btn:hover {
+	background-color: var(--white-color);
+	color: var(--black-color);
+}
+
+.slide-controll {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	outline: 0;
+
+	border: 0;
+	border-radius: 50%;
+	font-size: 20px;
+
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slide-controll:hover {
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+
+.slide-prev {
+	left: -80px;
+}
+
+.slide-next {
+	right: -80px;
+}
+
+.slider:hover .slide-prev {
+	left: 50px;
+}
+
+.slider:hover .slide-next {
+	right: 50px;
+}
+
+/* slide animation */
+.top-down {
+	transform: translateY(-100%);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slide.active .top-down {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.right-left {
+	transform: translateX(100%);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slide.active .right-left {
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.left-right {
+	transform: translateX(-100%);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slide.active .left-right {
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.trans-delay-0-2 {
+	transition-delay: 0.2s;
+}
+
+.trans-delay-0-4 {
+	transition-delay: 0.4s;
+}
+
+.trans-delay-0-6 {
+	transition-delay: 0.6s;
+}
+/* end slide animation */
+/* end hero section */
