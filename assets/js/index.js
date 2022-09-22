@@ -10,6 +10,10 @@ const slider = $('.slider')
 const prevBtn = $('.slide-prev')
 const nextBtn = $('.slide-next')
 
+const menuToggleBtn = $('.mb-menu__toggle')
+const menuCloseBtn = $('.mb-menu__close')
+const headerWrapper = $('.header-wrapper')
+
 const products = [
 	{
 		name: 'JBL E55BT KEY BLACK',
@@ -153,3 +157,9 @@ products.forEach((e) => {
 	product_list.insertAdjacentHTML('beforeend', prod)
 	best_product_list.insertAdjacentHTML('afterbegin', prod)
 })
+
+// show menu for mobile
+menuToggleBtn.onclick = () => headerWrapper.classList.add('active')
+
+// hide menu for mobile
+menuCloseBtn.onclick = () => headerWrapper.classList.remove('active')
