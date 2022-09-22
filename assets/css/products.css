@@ -1,0 +1,115 @@
+/* breadcumb */
+.breadcumb {
+	font-weight: 600;
+	padding-left: 20px;
+}
+
+.breadcumb a:hover {
+	color: var(--primary-color);
+}
+
+.breadcumb a.active {
+	color: var(--primary-color);
+}
+
+.breadcumb span {
+	margin: 0 15px;
+}
+/* end breadcumb */
+
+/* filter */
+.filter-header {
+	display: block;
+	margin: 20px 0;
+	font-weight: 600;
+}
+
+.filter-list > li {
+	margin-bottom: 20px;
+}
+
+.filter-toggle-box {
+	display: none;
+}
+
+.price-range span {
+	flex-grow: 1;
+	text-align: center;
+	margin: 0 10px;
+}
+
+.price-range input {
+	width: 40%;
+	outline: 0;
+	padding: 5px;
+}
+
+.group-checkbox input {
+	opacity: 0;
+	height: 0;
+	width: 0;
+	cursor: pointer;
+}
+
+.group-checkbox label {
+	cursor: pointer;
+	padding-left: 30px;
+	position: relative;
+}
+
+.group-checkbox label::before {
+	display: block;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -2px;
+
+	width: 16px;
+	height: 16px;
+	background-color: var(--main-bg-color);
+	border: 1px solid #7b7979;
+}
+
+.group-checkbox label > i {
+	position: absolute;
+	left: 1px;
+	top: -1px;
+
+	color: var(--primary-color);
+	transform: scale(0);
+	transition: transform 0.1s ease-in-out;
+}
+
+.group-checkbox input:checked + label i {
+	transform: scale(1);
+}
+
+.rating i {
+	color: var(--star-color);
+}
+/* end filter */
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+	.filter-toggle-box {
+		display: block;
+	}
+
+	.filter-col {
+		position: fixed;
+		width: 100%;
+		background-color: var(--main-bg-color);
+		z-index: 98;
+
+		left: 100%;
+		height: 80vh;
+		overflow-y: auto;
+		box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+		transition: left 0.2s ease-in-out;
+	}
+
+	.filter-col.active {
+		left: 0;
+	}
+}
+/* end responsive */

@@ -2,18 +2,6 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
-let slide_index = 0
-let slide_play = true
-let slides = $$('.slide')
-
-const slider = $('.slider')
-const prevBtn = $('.slide-prev')
-const nextBtn = $('.slide-next')
-
-const menuToggleBtn = $('.mb-menu__toggle')
-const menuCloseBtn = $('.mb-menu__close')
-const headerWrapper = $('.header-wrapper')
-
 const products = [
 	{
 		name: 'JBL E55BT KEY BLACK',
@@ -61,70 +49,19 @@ const products = [
 		old_price: '400',
 		curr_price: '300',
 	},
-	{
-		name: 'JBL Endurance SPRINT',
-		image1:
-			'./assets/images/JBL_Endurance-SPRINT_Product-Image_Red_front-1605x1605px.webp',
-		image2: './assets/images/JBL-Endurance-Sprint_Alt_Red-1605x1605px.webp',
-		old_price: '400',
-		curr_price: '300',
-	},
 ]
 
-const product_list = $('.latest-products')
-const best_product_list = $('.best-products')
+const product_list = $('.products')
+const filterToggle = $('.filter-toggle')
+const filterClose = $('.filter-close')
+const filterCol = $('.filter-col')
 // end let - const
 
 // function
-hideAllSlide = () => {
-	slides.forEach((slide) => {
-		slide.classList.remove('active')
-	})
-}
-
-showSlide = () => {
-	hideAllSlide()
-	slides[slide_index].classList.add('active')
-}
-
-prevSlide = () =>
-	(slide_index = slide_index - 1 < 0 ? slides.length - 1 : slide_index - 1)
-
-nextSlide = () =>
-	(slide_index = slide_index + 1 == slides.length ? 0 : slide_index + 1)
-// end function
-
-// run slide
-showSlide()
-// pause slide when hover slider
-slider.onmouseover = () => (slide_play = false)
-
-// enable slide when leave out slider
-slider.onmouseleave = () => (slide_play = true)
-
-// auto slide
-setInterval(() => {
-	if (!slide_play) return
-	nextSlide()
-	showSlide()
-}, 4000)
-
-// slide controller
-prevBtn.onclick = () => {
-	prevSlide()
-	showSlide()
-}
-
-nextBtn.onclick = () => {
-	nextSlide()
-	showSlide()
-}
-// end run slide
-
-// render products
-products.forEach((product) => {
-	let prod = `
-			<div class="col-3 col-md-6 col-sm-12">
+render = (products) => {
+	products.forEach((product) => {
+		let prod = `
+			<div class="col-4 col-md-6 col-sm-12">
 					<div class="product-card">
 							<div class="product-card-img">
 									<img src="${product.image1}" alt="">
@@ -154,12 +91,17 @@ products.forEach((product) => {
 			</div>
 	`
 
-	product_list.insertAdjacentHTML('beforeend', prod)
-	best_product_list.insertAdjacentHTML('afterbegin', prod)
-})
+		product_list.insertAdjacentHTML('beforeend', prod)
+	})
+}
+// end function
 
-// show menu for mobile
-menuToggleBtn.onclick = () => headerWrapper.classList.add('active')
+// render
+render(products)
+render(products)
 
-// hide menu for mobile
-menuCloseBtn.onclick = () => headerWrapper.classList.remove('active')
+// show filter
+filterToggle.onclick = () => filterCol.classList.add('active')
+
+// hide filter
+filterClose.onclick = () => filterCol.classList.remove('active')
