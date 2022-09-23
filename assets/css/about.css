@@ -1,0 +1,88 @@
+.about-header {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.about-content {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.about-member {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-card {
+	width: 30%;
+	border-radius: 25px;
+	background-color: var(--second-bg-color);
+}
+
+.about-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.about-card-img-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 250px;
+	position: relative;
+}
+
+.about-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 250px;
+	width: 100%;
+	background-color: #4070f4;
+
+	border-radius: 25px;
+	border-bottom-right-radius: 0;
+}
+
+.about-overlay::before,
+.about-overlay::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+
+	height: 40px;
+	width: 40px;
+	background-color: #4070f4;
+}
+
+.about-overlay::after {
+	border-top-right-radius: 25px;
+	background-color: var(--second-bg-color);
+}
+
+.about-card-img {
+	position: relative;
+	z-index: 1;
+
+	width: 158px;
+	height: 158px;
+	border: 4px solid var(--white-color);
+	border-radius: 50%;
+}
+
+.about-card-img > img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 4px solid #4070f4;
+}
+
+.about-card-info {
+	margin: 20px 0;
+}
+
+.about-card-info > * ~ * {
+	margin-top: 10px;
+}
