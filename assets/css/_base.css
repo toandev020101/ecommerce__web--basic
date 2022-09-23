@@ -542,6 +542,10 @@ footer ul li {
 	color: var(--star-color);
 }
 
+.required {
+	color: red;
+}
+
 /* responsive */
 @media only screen and (max-width: 1028px) {
 	/* header */
