@@ -1,0 +1,93 @@
+.contact-info {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	padding: 20px 30px;
+	border-radius: 10px;
+}
+
+.contact-info p {
+	margin: 10px 0;
+	color: #f3f3f3;
+	font-size: 15px;
+}
+
+.contact-info-item {
+	margin-top: 30px;
+	color: #f3f3f3;
+}
+
+.contact-info-item > i {
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.contact-info-item span {
+	font-size: 15px;
+}
+
+.contact-socials {
+	margin-top: 100px;
+	display: flex;
+}
+
+.contact-socials > li {
+	margin-right: 20px;
+}
+
+.contact-socials > li > a {
+	font-size: 25px;
+}
+
+.contact-socials > li > a:hover {
+	color: #e0e0e0;
+}
+
+.contact-form {
+	padding: 20px;
+}
+
+.contact-form > div {
+	margin-bottom: 10px;
+}
+
+.contact-form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.contact-form input {
+	height: 40px;
+	padding: 0 10px;
+	outline: 0;
+}
+
+.contact-form-double {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-form-double > div {
+	width: 49%;
+}
+
+.contact-form-double > div > input {
+	width: 100%;
+}
+
+div.contact-form-msg > textarea {
+	width: 100%;
+	height: 150px;
+
+	outline: 0;
+	padding: 10px;
+	resize: none;
+}
+
+.contact-form-btn {
+	text-align: right;
+}
+
+.contact-form-btn > input {
+	cursor: pointer;
+	text-transform: unset;
+}
