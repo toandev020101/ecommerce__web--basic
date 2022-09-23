@@ -1,7 +1,4 @@
 // let - const
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
-
 let slide_index = 0
 let slide_play = true
 let slides = $$('.slide')
@@ -9,10 +6,6 @@ let slides = $$('.slide')
 const slider = $('.slider')
 const prevBtn = $('.slide-prev')
 const nextBtn = $('.slide-next')
-
-const menuToggleBtn = $('.mb-menu__toggle')
-const menuCloseBtn = $('.mb-menu__close')
-const headerWrapper = $('.header-wrapper')
 
 const products = [
 	{
@@ -157,9 +150,3 @@ products.forEach((product) => {
 	product_list.insertAdjacentHTML('beforeend', prod)
 	best_product_list.insertAdjacentHTML('afterbegin', prod)
 })
-
-// show menu for mobile
-menuToggleBtn.onclick = () => headerWrapper.classList.add('active')
-
-// hide menu for mobile
-menuCloseBtn.onclick = () => headerWrapper.classList.remove('active')

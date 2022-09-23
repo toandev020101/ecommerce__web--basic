@@ -1,7 +1,4 @@
 // let - const
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
-
 const products = [
 	{
 		name: 'JBL E55BT KEY BLACK',

@@ -1,22 +1,3 @@
-/* breadcumb */
-.breadcumb {
-	font-weight: 600;
-	padding-left: 20px;
-}
-
-.breadcumb a:hover {
-	color: var(--primary-color);
-}
-
-.breadcumb a.active {
-	color: var(--primary-color);
-}
-
-.breadcumb span {
-	margin: 0 15px;
-}
-/* end breadcumb */
-
 /* filter */
 .filter-header {
 	display: block;
@@ -82,10 +63,6 @@
 
 .group-checkbox input:checked + label i {
 	transform: scale(1);
-}
-
-.rating i {
-	color: var(--star-color);
 }
 /* end filter */
 
