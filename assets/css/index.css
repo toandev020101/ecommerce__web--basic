@@ -302,6 +302,10 @@
 }
 
 @media only screen and (max-width: 750px) {
+	.search {
+		width: 100%;
+	}
+
 	.hero {
 		height: calc(var(--slider-size) - 30vh);
 	}
