@@ -2,11 +2,6 @@
 const productImgItems = $$('.product-img-item')
 const productColorItems = $$('.product-color-list > span')
 
-const quantityPlusBtn = $('.product-quantity-btn-plus')
-const quantityMinusBtn = $('.product-quantity-btn-minus')
-const quantityNum = $('.product-quantity')
-const quantityMax = $('.product-quantity-curr > span')
-
 const viewBtn = $('.btn-view-description')
 const productDescriptionContent = $('.product-detail-description-content')
 
@@ -115,37 +110,6 @@ activeProductColorItem = (productColorItems) => {
 // active
 activeProductImgItem(productImgItems)
 activeProductColorItem(productColorItems)
-
-// quantity
-quantityPlusBtn.onclick = () => {
-	const quantityNumContent = parseInt(quantityNum.textContent)
-	const quantityMaxContent = parseInt(quantityMax.textContent)
-
-	if (quantityNumContent == quantityMaxContent) {
-		return
-	} else if (quantityNumContent == quantityMaxContent - 1) {
-		quantityPlusBtn.classList.add('disabled')
-	} else if (quantityNumContent == 1) {
-		quantityMinusBtn.classList.remove('disabled')
-	}
-
-	quantityNum.textContent = quantityNumContent + 1
-}
-
-quantityMinusBtn.onclick = () => {
-	const quantityNumContent = parseInt(quantityNum.textContent)
-	const quantityMaxContent = parseInt(quantityMax.textContent)
-
-	if (quantityNumContent == 1) {
-		return
-	} else if (quantityNumContent == 2) {
-		quantityMinusBtn.classList.add('disabled')
-	} else if (quantityNumContent == quantityMaxContent) {
-		quantityPlusBtn.classList.remove('disabled')
-	}
-
-	quantityNum.textContent = quantityNumContent - 1
-}
 
 // active description
 viewBtn.onclick = () => {
