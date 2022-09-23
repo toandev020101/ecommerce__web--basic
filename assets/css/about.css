@@ -86,3 +86,27 @@
 .about-card-info > * ~ * {
 	margin-top: 10px;
 }
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+	.about-member {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.about-card {
+		width: 40%;
+	}
+
+	div.about-card + div.about-card {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.about-card {
+		width: 100%;
+	}
+}
+/* end responsive */
