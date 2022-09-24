@@ -272,6 +272,10 @@
 	}
 	/* end hero section */
 
+	.promotion {
+		margin: 15px 80px;
+	}
+
 	/* product list */
 	.product-btn {
 		opacity: 1;
@@ -331,6 +335,10 @@
 	.slide-next,
 	.slider:hover .slide-next {
 		right: 35%;
+	}
+
+	.promotion {
+		margin: 15px;
 	}
 
 	.blog-info {
