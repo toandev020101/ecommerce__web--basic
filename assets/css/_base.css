@@ -90,6 +90,7 @@ img {
 .mb-logo {
 	font-size: 22px;
 	font-weight: 700;
+	color: var(--primary-color);
 }
 /* end mobile menu */
 
@@ -106,6 +107,7 @@ img {
 .logo {
 	font-size: 30px;
 	font-weight: 700;
+	color: var(--primary-color);
 }
 
 .search {
@@ -546,6 +548,24 @@ footer ul li {
 
 .required {
 	color: red;
+}
+
+.form-password {
+	position: relative;
+}
+
+.form-password > input {
+	padding-right: 35px !important;
+}
+
+.form-password > i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+
+	font-size: 20px;
+	cursor: pointer;
 }
 
 /* responsive */
