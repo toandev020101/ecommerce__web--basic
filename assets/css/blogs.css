@@ -1,0 +1,42 @@
+.blog-item {
+	margin-top: 30px;
+}
+
+.blog-item img {
+	border-radius: 5px;
+}
+
+.blog-item > h2 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.blog-item h2 {
+	transition: color 0.2 ease-in-out;
+}
+
+.blog-item:hover h2 {
+	color: #4070f4;
+}
+
+.blog-item span {
+	font-size: 14px;
+	margin-right: 5px;
+	color: #777;
+}
+
+.blog-item.active > div > div {
+	margin-bottom: 0;
+}
+
+.blog-item.active p {
+	margin: 10px 0;
+}
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+	.blog-item.active h2 {
+		margin-top: 10px;
+	}
+}
+/* end responsive */
