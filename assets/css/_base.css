@@ -170,7 +170,8 @@ img {
 	margin: -8px 0 0 35px;
 }
 
-.main-menu > li:hover::after {
+.main-menu > li:hover::after,
+.main-menu > li.active::after {
 	width: calc(100% - 70px);
 }
 
@@ -184,7 +185,8 @@ img {
 	transition: color 0.2s linear;
 }
 
-.main-menu > li:hover > a {
+.main-menu > li:hover > a,
+.main-menu > li.active > a {
 	color: var(--primary-color);
 }
 
