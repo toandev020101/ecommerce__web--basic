@@ -42,49 +42,49 @@
       <div class="menu-bar">
         <ul>
           <li>
-            <a href="/admin/index.html" class="menu-item active">
+            <a href="/admin/index.html" class="menu-item active" tooltip="Bảng điều khiển">
               <i class='bx bx-home-alt'></i>
               <span>Bảng điều khiển</span>
             </a>
           </li>
           <li>
-            <a href="/admin/products.html" class="menu-item">
+            <a href="/admin/products.html" class="menu-item" tooltip="Sản phẩm">
               <i class='bx bx-shopping-bag'></i>
               <span>Sản phẩm</span>
             </a>
           </li>
           <li>
-            <a href="/admin/news.html" class="menu-item">
+            <a href="/admin/news.html" class="menu-item" tooltip="Tin tức">
               <i class='bx bxs-news'></i>
               <span>Tin tức</span>
             </a>
           </li>
           <li>
-            <a href="/admin/notifications.html" class="menu-item">
+            <a href="/admin/notifications.html" class="menu-item" tooltip="Thông báo">
               <i class='bx bx-bell'></i>
               <span>Thông báo</span>
             </a>
           </li>
           <li>
-            <a href="/admin/rating.html" class="menu-item">
+            <a href="/admin/rating.html" class="menu-item" tooltip="Đánh giá">
               <i class='bx bx-chat'></i>
               <span>Đánh giá</span>
             </a>
           </li>
           <li>
-            <a href="/admin/contact.html" class="menu-item">
+            <a href="/admin/contact.html" class="menu-item" tooltip="Liên hệ">
               <i class='bx bxs-contact'></i>
               <span>Liên hệ</span>
             </a>
           </li>
           <li>
-            <a href="/admin/display.html" class="menu-item">
+            <a href="/admin/display.html" class="menu-item" tooltip="Hiển thị">
               <i class='bx bx-laptop'></i>
               <span>Hiển thị</span>
             </a>
           </li>
           <li>
-            <a href="/admin/users.html" class="menu-item">
+            <a href="/admin/users.html" class="menu-item" tooltip="Khách hàng">
               <i class='bx bx-user'></i>
               <span>Khách hàng</span>
             </a>
@@ -92,7 +92,7 @@
         </ul>
 
         <div class="sidebar-logout">
-          <span class="menu-item">
+          <span class="menu-item" tooltip="Đăng xuất">
             <i class='bx bx-log-out'></i>
             <span>Đăng xuất</span>
           </span>
@@ -121,7 +121,7 @@
     <!-- end header -->
 
     <!-- dashboard content -->
-    <div class="dashboard content">
+    <div class="content">
       <h2>Bảng điều khiển</h2>
       <div class="row">
         <div class="col-3 col-md-6 col-sm-12">
@@ -185,18 +185,38 @@
                 <tbody>
                   <tr>
                     <td>Đức Toàn</td>
-                    <td>140</td>
-                    <td>2,000,000</td>
+                    <td>200</td>
+                    <td>10,000,000</td>
                   </tr>
                   <tr>
                     <td>Hoàng Long</td>
-                    <td>205</td>
-                    <td>5,030,000</td>
+                    <td>180</td>
+                    <td>7,500,000</td>
                   </tr>
                   <tr>
                     <td>Anh Kha</td>
-                    <td>108</td>
-                    <td>2,500,000</td>
+                    <td>130</td>
+                    <td>4,500,000</td>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                    <td>90</td>
+                    <td>2,100,000</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>80</td>
+                    <td>1,500,000</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>50</td>
+                    <td>1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                    <td>40</td>
+                    <td>500,000</td>
                   </tr>
                 </tbody>
               </table>
@@ -229,7 +249,7 @@
                     <td>1,000,000</td>
                     <td>30/09/2022</td>
                     <td>
-                      <div class="box-status box-shiping">
+                      <div class="box-status box-info">
                         Đang giao
                       </div>
                     </td>
@@ -240,7 +260,7 @@
                     <td>2,500,000</td>
                     <td>29/09/2022</td>
                     <td>
-                      <div class="box-status box-pending">
+                      <div class="box-status box-warning">
                         Chờ xử lý
                       </div>
                     </td>
@@ -251,7 +271,7 @@
                     <td>500,000</td>
                     <td>29/09/2022</td>
                     <td>
-                      <div class="box-status box-delivered">
+                      <div class="box-status box-success">
                         Đã giao
                       </div>
                     </td>
@@ -260,10 +280,32 @@
                     <td>#08DK72</td>
                     <td>Hoàng Long</td>
                     <td>1,500,000</td>
-                    <td>28/10/2022</td>
+                    <td>28/09/2022</td>
                     <td>
-                      <div class="box-status box-returnd">
+                      <div class="box-status box-danger">
                         Hoàn trả
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#08DK71</td>
+                    <td>Đức Toàn</td>
+                    <td>500,000</td>
+                    <td>26/09/2022</td>
+                    <td>
+                      <div class="box-status box-success">
+                        Đã giao
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#08DK70</td>
+                    <td>Anh Kha</td>
+                    <td>1,000,000</td>
+                    <td>25/10/2022</td>
+                    <td>
+                      <div class="box-status box-info">
+                        Đang giao
                       </div>
                     </td>
                   </tr>

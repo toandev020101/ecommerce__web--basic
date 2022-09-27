@@ -1,0 +1,33 @@
+.products-btn {
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.products-item-img {
+	max-width: 100px;
+}
+
+.products-item-name {
+	max-width: 200px;
+	white-space: unset;
+}
+
+.products-item-action {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.products-item-action i {
+	font-size: 25px;
+	cursor: pointer;
+	transition: color 0.1s ease-in-out;
+}
+
+.products-item-action i:hover {
+	color: var(--primary-color);
+}
+
+.products-pagination {
+	margin-top: 20px;
+}
