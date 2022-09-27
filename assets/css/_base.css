@@ -175,3 +175,53 @@ table tbody tr:hover td {
 	padding-right: 50px;
 }
 /* end table */
+
+/* tooltip */
+.tooltip {
+	position: relative;
+}
+
+.tooltip > *::before {
+	content: attr(tooltip);
+	position: absolute;
+	top: -37px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	color: var(--white-color);
+	background-color: var(--black-color);
+	padding: 5px 10px;
+
+	border-radius: 3px;
+	font-size: 14px;
+	white-space: nowrap;
+
+	opacity: 0;
+	visibility: hidden;
+	max-height: 0;
+	transition: all 0.1s ease-in-out;
+}
+
+.tooltip > *::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 50%;
+
+	transform: translateX(-50%);
+	border: 8px solid;
+	border-color: #000 transparent transparent transparent;
+
+	opacity: 0;
+	visibility: hidden;
+	max-height: 0;
+	transition: all 0.1s ease-in-out;
+}
+
+.tooltip:hover > *::before,
+.tooltip:hover > *::after {
+	opacity: 1;
+	visibility: visible;
+	max-height: 100px;
+}
+/* end tooltip */

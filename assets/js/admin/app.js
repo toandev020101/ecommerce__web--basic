@@ -14,9 +14,17 @@ sidebarToggle.onclick = () => {
 		sidebarToggle.setAttribute('class', 'bx bx-chevron-right sidebar-toggle')
 		sidebar.classList.add('short')
 		container.classList.add('long')
+
+		$$('.menu-item').forEach((menuItem) => {
+			menuItem.parentNode.classList.add('tooltip')
+		})
 	} else {
 		sidebarToggle.setAttribute('class', 'bx bx-chevron-left sidebar-toggle')
 		sidebar.classList.remove('short')
 		container.classList.remove('long')
+
+		$$('.menu-item').forEach((menuItem) => {
+			menuItem.parentNode.classList.remove('tooltip')
+		})
 	}
 }
