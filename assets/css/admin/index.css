@@ -1,10 +1,10 @@
 .dashboard-box {
-	padding: 0 50px;
+	padding: 0 10px;
 	min-height: 100px;
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 
 	position: relative;
 	z-index: 1;
@@ -40,13 +40,12 @@
 }
 
 .dashboard-box-icon {
-	width: 10%;
 	font-size: 38px;
 	z-index: 1;
+	margin-right: 40px;
 }
 
 .dashboard-box-content {
-	width: 60%;
 	z-index: 1;
 }
 
