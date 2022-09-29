@@ -9,7 +9,7 @@ const passwordInput = $('.password')
 // hide show password
 passwordBtn.onclick = () => {
 	const type = passwordInput.getAttribute('type')
-	if (type == 'password') {
+	if (type === 'password') {
 		passwordInput.setAttribute('type', 'text')
 		passwordBtn.setAttribute('class', 'bx bx-show-alt password-btn')
 	} else {

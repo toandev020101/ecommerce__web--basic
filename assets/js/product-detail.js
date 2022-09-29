@@ -114,7 +114,7 @@ activeProductColorItem(productColorItems)
 // active description
 viewBtn.onclick = () => {
 	const viewBtnContent = viewBtn.textContent
-	if (viewBtnContent == 'Xem thêm') {
+	if (viewBtnContent === 'Xem thêm') {
 		productDescriptionContent.classList.add('active')
 		viewBtn.textContent = 'Rút gọn'
 	} else {
