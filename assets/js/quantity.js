@@ -16,11 +16,11 @@ quantityPlusBtnList.forEach((quantityPlusBtn) => {
 			? parseInt(quantityMax.textContent)
 			: 99
 
-		if (quantityNumContent == quantityMaxContent) {
+		if (quantityNumContent === quantityMaxContent) {
 			return
-		} else if (quantityNumContent == quantityMaxContent - 1) {
+		} else if (quantityNumContent === quantityMaxContent - 1) {
 			quantityPlusBtn.classList.add('disabled')
-		} else if (quantityNumContent == 1) {
+		} else if (quantityNumContent === 1) {
 			quantityMinusBtn.classList.remove('disabled')
 		}
 
@@ -38,11 +38,11 @@ quantityMinusBtnList.forEach((quantityMinusBtn) => {
 			? parseInt(quantityMax.textContent)
 			: 99
 
-		if (quantityNumContent == 1) {
+		if (quantityNumContent === 1) {
 			return
-		} else if (quantityNumContent == 2) {
+		} else if (quantityNumContent === 2) {
 			quantityMinusBtn.classList.add('disabled')
-		} else if (quantityNumContent == quantityMaxContent) {
+		} else if (quantityNumContent === quantityMaxContent) {
 			quantityPlusBtn.classList.remove('disabled')
 		}
 

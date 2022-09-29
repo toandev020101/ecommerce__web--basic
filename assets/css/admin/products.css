@@ -5,6 +5,7 @@
 
 .products-item-img {
 	width: 100px;
+	object-fit: cover;
 }
 
 .products-item-name {

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PKShop: Chi tiết sản phẩm</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- end google font -->
+
+  <!-- boxicons -->
+  <link rel="stylesheet" href="../assets/boxicons-2.1.0/css/boxicons.min.css">
+  <!-- end boxicons -->
+
+  <!-- main css -->
+  <link rel="stylesheet" href="../assets/css/_base.css">
+  <link rel="stylesheet" href="../assets/css/_grid.css">
+  <link rel="stylesheet" href="../assets/css/admin/app.css">
+  <link rel="stylesheet" href="../assets/css/admin/readOraddOredit.css">
+  <!-- end main css -->
+</head>
+
+<body>
+  <div class="bg-main">
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <header>
+        <a href="/admin/index.html" class="sidebar-logo">
+          <i class='bx bx-shopping-bag'></i>
+          <span>PKShop</span>
+        </a>
+        <i class='bx bx-chevron-left sidebar-toggle'></i>
+      </header>
+
+      <div class="menu-bar">
+        <ul>
+          <li>
+            <a href="/admin/index.html" class="menu-item" tooltip="Bảng điều khiển">
+              <i class='bx bx-home-alt'></i>
+              <span>Bảng điều khiển</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/products.html" class="menu-item active" tooltip="Sản phẩm">
+              <i class='bx bx-shopping-bag'></i>
+              <span>Sản phẩm</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/news.html" class="menu-item" tooltip="Tin tức">
+              <i class='bx bxs-news'></i>
+              <span>Tin tức</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/notifications.html" class="menu-item" tooltip="Thông báo">
+              <i class='bx bx-bell'></i>
+              <span>Thông báo</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/rating.html" class="menu-item" tooltip="Đánh giá">
+              <i class='bx bx-chat'></i>
+              <span>Đánh giá</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/contact.html" class="menu-item" tooltip="Liên hệ">
+              <i class='bx bxs-contact'></i>
+              <span>Liên hệ</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/display.html" class="menu-item" tooltip="Hiển thị">
+              <i class='bx bx-laptop'></i>
+              <span>Hiển thị</span>
+            </a>
+          </li>
+          <li>
+            <a href="/admin/users.html" class="menu-item" tooltip="Khách hàng">
+              <i class='bx bx-user'></i>
+              <span>Khách hàng</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="sidebar-logout">
+          <span class="menu-item" tooltip="Đăng xuất">
+            <i class='bx bx-log-out'></i>
+            <span>Đăng xuất</span>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- end sidebar -->
+  </div>
+
+  <div class="bg-second container">
+    <!-- header -->
+    <header class="admin-header">
+      <div class="mb-menu">
+        <i class='bx bx-menu mb-menu__toggle'></i>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm...">
+        <i class='bx bx-search-alt'></i>
+      </div>
+
+      <div class="user-menu">
+        <a href="#"><i class='bx bx-bell'></i></a>
+        <a href="#" class="user-menu-info">
+          <img src="../assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
+          <span>Đức Toàn</span>
+        </a>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- readOraddOrEdit content -->
+    <div class="content">
+      <h2>Chi tiết sản phẩm</h2>
+      <div class="box">
+        <form action="">
+          <div class="row">
+            <div class="col-12">
+              <label>Ảnh đại diện <span class="required">*</span></label>
+              <div class="upload">
+                <img src="" alt="" class="upload-img">
+                <div class="upload-content">
+                  <i class='bx bx-cloud-upload'></i>
+                  <span>Tải ảnh lên</span>
+                </div>
+                <input type="file" class="upload-input">
+                <i class='bx bx-x upload-close'></i>
+                <div class="upload-name"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label>Thư viện ảnh <span class="required">*</span></label>
+              <div class="upload-list">
+                <div class="upload">
+                  <img src="" alt="" class="upload-img">
+                  <div class="upload-content">
+                    <i class='bx bx-cloud-upload'></i>
+                    <span>Tải ảnh lên</span>
+                  </div>
+                  <input type="file" class="upload-input">
+                  <i class='bx bx-x upload-close'></i>
+                  <div class="upload-name"></div>
+                </div>
+                <div class="upload">
+                  <img src="" alt="" class="upload-img">
+                  <div class="upload-content">
+                    <i class='bx bx-cloud-upload'></i>
+                    <span>Tải ảnh lên</span>
+                  </div>
+                  <input type="file" class="upload-input">
+                  <i class='bx bx-x upload-close'></i>
+                  <div class="upload-name"></div>
+                </div>
+                <div class="upload">
+                  <img src="" alt="" class="upload-img">
+                  <div class="upload-content">
+                    <i class='bx bx-cloud-upload'></i>
+                    <span>Tải ảnh lên</span>
+                  </div>
+                  <input type="file" class="upload-input">
+                  <i class='bx bx-x upload-close'></i>
+                  <div class="upload-name"></div>
+                </div>
+                <div class="upload">
+                  <img src="" alt="" class="upload-img">
+                  <div class="upload-content">
+                    <i class='bx bx-cloud-upload'></i>
+                    <span>Tải ảnh lên</span>
+                  </div>
+                  <input type="file" class="upload-input">
+                  <i class='bx bx-x upload-close'></i>
+                  <div class="upload-name"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-12">
+              <div>
+                <label for="product-name">Tên sản phẩm <span class="required">*</span></label>
+                <input type="text" placeholder="Tên sản phẩm" id="product-name" required>
+              </div>
+            </div>
+            <div class="col-6 col-sm-12">
+              <div>
+                <label for="product-price">Giá <span class="required">*</span></label>
+                <input type="text" placeholder="Giá" id="product-price" required>
+              </div>
+            </div>
+            <div class="col-6 col-sm-12">
+              <div>
+                <label for="product-quantity">Số lượng <span class="required">*</span></label>
+                <input type="text" placeholder="Số lượng" id="product-quantity" required>
+              </div>
+            </div>
+            <div class="col-6 col-sm-12">
+              <label>Nhãn hiệu <span class="required">*</span></label>
+              <select name="status" class="product-status">
+                <option value="0">JBL</option>
+                <option value="1">Beat</option>
+                <option value="2">Logitech</option>
+                <option value="3">Samsung</option>
+                <option value="4">Sony</option>
+              </select>
+            </div>
+            <div class="col-6 col-sm-12">
+              <label>Trạng thái <span class="required">*</span></label>
+              <ul class="product-checkbox-list">
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="status1" checked>
+                    <label for="status1">
+                      Mới nhất
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="status2">
+                    <label for="status2">
+                      Giảm giá
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="status3">
+                    <label for="status3">
+                      Bán chạy
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-12">
+              <label>Màu sắc <span class="required">*</span></label>
+              <ul class="product-checkbox-list">
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="color1">
+                    <label for="color1">
+                      Đỏ
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="color2">
+                    <label for="color2">
+                      Xanh
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="color3">
+                    <label for="color3">
+                      Trắng
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="color4">
+                    <label for="color4">
+                      Hồng
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="group-checkbox">
+                    <input type="checkbox" id="color5">
+                    <label for="color5">
+                      Vàng
+                      <i class='bx bx-check'></i>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <label>Mô tả <span class="required">*</span></label>
+              <!-- text editor -->
+              <div class="text-editor">
+                <!-- text editor header -->
+                <div class="text-editor-header">
+                  <!-- text editor format -->
+                  <button type="button" class="text-editor-btn format" id="bold">
+                    <i class='bx bx-bold'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn format" id="italic">
+                    <i class='bx bx-italic'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn format" id="underline">
+                    <i class='bx bx-underline'></i>
+                  </button>
+                  <!-- end text editor format -->
+
+                  <!-- text editor list -->
+                  <button type="button" class="text-editor-btn" id="insertUnorderedList">
+                    <i class='bx bx-list-ul'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn" id="insertOrderedList">
+                    <i class='bx bx-list-ol'></i>
+                  </button>
+                  <!-- end text editor list -->
+
+                  <!-- text editor undo/redo -->
+                  <button type="button" class="text-editor-btn" id="undo">
+                    <i class='bx bx-undo'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn" id="redo">
+                    <i class='bx bx-redo'></i>
+                  </button>
+                  <!-- end text editor undo/redo -->
+
+                  <!-- text editor link -->
+                  <button type="button" class="adv-text-editor-btn" id="createLink">
+                    <i class='bx bx-link'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn" id="unlink">
+                    <i class='bx bx-unlink'></i>
+                  </button>
+                  <button type="button" class="adv-text-editor-btn" id="insertImage">
+                    <i class='bx bx-image'></i>
+                  </button>
+                  <!-- end text editor link -->
+
+                  <!-- text editor alignment -->
+                  <button type="button" class="text-editor-btn align" id="justifyLeft">
+                    <i class='bx bx-align-left'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn align" id="justifyCenter">
+                    <i class='bx bx-align-middle'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn align" id="justifyRight">
+                    <i class='bx bx-align-right'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn align" id="justifyFull">
+                    <i class='bx bx-align-justify'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn spacing" id="indent">
+                    <i class='bx bx-right-indent'></i>
+                  </button>
+                  <button type="button" class="text-editor-btn spacing" id="outdent">
+                    <i class='bx bx-left-indent'></i>
+                  </button>
+                  <!-- end text editor alignment -->
+
+                  <!-- text editor headings -->
+                  <select class="adv-text-editor-btn" id="formatBlock">
+                    <option value="h1">H1</option>
+                    <option value="h2">H2</option>
+                    <option value="h3">H3</option>
+                    <option value="h4">H4</option>
+                    <option value="h5">H5</option>
+                    <option value="h6">H6</option>
+                  </select>
+                  <!-- end text editor headings -->
+
+                  <!-- text editor font -->
+                  <select class="adv-text-editor-btn" id="fontName">
+                  </select>
+                  <!-- end text editor font -->
+
+                  <!-- text editor fontsize -->
+                  <select class="adv-text-editor-btn" id="fontSize">
+                  </select>
+                  <!-- end text editor fontsize -->
+
+                  <!-- text editor color -->
+                  <div class="text-editor-input-wrapper">
+                    <input type="color" class="adv-text-editor-btn" id="foreColor">
+                    <label for="foreColor">Font Color</label>
+                  </div>
+
+                  <div class="text-editor-input-wrapper">
+                    <input type="color" class="adv-text-editor-btn" id="backColor">
+                    <label for="backColor">Highlight Color</label>
+                  </div>
+                  <!-- end text editor color -->
+                </div>
+                <!-- end text editor header -->
+
+                <!-- text editor content -->
+                <div class="text-editor-content" contenteditable></div>
+                <!-- end text editor content -->
+              </div>
+              <!-- end text editor -->
+            </div>
+          </div>
+          <div class="form-btn">
+            <input type="submit" class="btn" value="Thêm mới">
+            <input type="reset" class="btn btn-second reset-btn" value="Nhập lại">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end readOraddOrEdit content -->
+  </div>
+  <!-- js -->
+  <script src="../assets/js/admin/app.js"></script>
+  <script src="../assets/js/admin/text-editor.js"></script>
+  <!-- end js -->
+</body>
+
+</html>
