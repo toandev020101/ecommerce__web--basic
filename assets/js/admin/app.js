@@ -93,20 +93,22 @@ uploadInputList.forEach((uploadInput) => {
 })
 
 // reset form
-resetBtn.onclick = () => {
-	const form = resetBtn.parentNode.parentNode
-	const uploadList = form.querySelectorAll('.upload')
-	uploadList.forEach((upload) => {
-		const uploadImg = upload.querySelector('.upload-img')
-		const uploadContent = upload.querySelector('.upload-content')
-		const uploadInput = upload.querySelector('.upload-input')
-		uploadImg.src = ''
-		upload.classList.remove('active')
-		uploadImg.classList.remove('active')
-		uploadContent.classList.remove('hidden')
-		uploadInput.removeAttribute('hidden')
-	})
+if (resetBtn) {
+	resetBtn.onclick = () => {
+		const form = resetBtn.parentNode.parentNode
+		const uploadList = form.querySelectorAll('.upload')
+		uploadList.forEach((upload) => {
+			const uploadImg = upload.querySelector('.upload-img')
+			const uploadContent = upload.querySelector('.upload-content')
+			const uploadInput = upload.querySelector('.upload-input')
+			uploadImg.src = ''
+			upload.classList.remove('active')
+			uploadImg.classList.remove('active')
+			uploadContent.classList.remove('hidden')
+			uploadInput.removeAttribute('hidden')
+		})
 
-	const textEditorContent = form.querySelector('.text-editor-content')
-	textEditorContent.textContent = ''
+		const textEditorContent = form.querySelector('.text-editor-content')
+		textEditorContent.textContent = ''
+	}
 }
