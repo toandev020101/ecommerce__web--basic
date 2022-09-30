@@ -57,10 +57,73 @@
 
           <ul class="user-menu">
             <li>
-              <a href="/cart.html" class="badge">
-                <i class='bx bx-cart'></i>
+              <div class="user-menu-cart">
+                <a href="/cart.html" class="badge">
+                  <i class='bx bx-cart'></i>
+                </a>
+
                 <span class="badge-content">3</span>
-              </a>
+                <div class="user-menu-cart-list no-cart">
+                  <!-- no cart -->
+                  <img src="./assets/images/no-cart.png" alt="" class="user-menu-no-cart-img">
+                  <span class="user-menu-no-cart-text">Chưa có sản phẩm</span>
+                  <!-- end no cart -->
+
+                  <h4>Sản phẩm đã thêm</h4>
+                  <ul>
+                    <!-- cart item -->
+                    <li>
+                      <img
+                        src="./assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
+                        alt="" class="user-menu-cart-item-img">
+                      <div class="user-menu-cart-item-info">
+                        <div class="user-menu-cart-item-head">
+                          <h5>Lorem ipsum dolor</h5>
+                          <div>
+                            <span class="user-menu-cart-item-price">2,000,000đ</span>
+                            <span class="user-menu-cart-item-x">x</span>
+                            <span class="user-menu-cart-item-quantity">3</span>
+                          </div>
+                        </div>
+                        <div class="user-menu-cart-item-body">
+                          <span class="user-menu-cart-item-description">
+                            <span>Nhãn hiệu: JBL</span>
+                            <span>Màu sắc: Đỏ</span>
+                          </span>
+                          <span class="user-menu-cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- end cart item -->
+                    <!-- cart item -->
+                    <li>
+                      <img
+                        src="./assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
+                        alt="" class="user-menu-cart-item-img">
+                      <div class="user-menu-cart-item-info">
+                        <div class="user-menu-cart-item-head">
+                          <h5>Lorem ipsum dolor</h5>
+                          <div>
+                            <span class="user-menu-cart-item-price">2,000,000đ</span>
+                            <span class="user-menu-cart-item-x">x</span>
+                            <span class="user-menu-cart-item-quantity">3</span>
+                          </div>
+                        </div>
+                        <div class="user-menu-cart-item-body">
+                          <span class="user-menu-cart-item-description">
+                            <span>Nhãn hiệu: JBL</span>
+                            <span>Màu sắc: Đỏ</span>
+                          </span>
+                          <span class="user-menu-cart-item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- end cart item -->
+                  </ul>
+
+                  <button class="btn user-menu-cart-view"><a href="./cart.html">Xem giỏ hàng</a></button>
+                </div>
+              </div>
             </li>
             <li>
               <a href="#" class="badge">
@@ -68,10 +131,33 @@
                 <span class="badge-content">3</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <i class='bx bx-user-circle'></i>
+            <li class="user-menu-auth">
+              <!-- <a href="./login.html" class="user-menu-login">
+                Đăng nhập
               </a>
+              <span>/</span>
+              <a href="./register.html" class="user-menu-register">
+                Đăng ký
+              </a> -->
+              <a href="#" class="user-menu-info">
+                <img src="./assets/images/JBL_TUNE220TWS_Lifestyle_black.png" alt="">
+                <span>Đức Toàn</span>
+              </a>
+
+              <ul>
+                <li>
+                  <a href="#">Tài khoản của tôi</a>
+                </li>
+                <li>
+                  <a href="#">Địa chỉ của tôi</a>
+                </li>
+                <li>
+                  <a href="#">Theo dõi đơn hàng</a>
+                </li>
+                <li>
+                  <a href="#">Đăng xuất</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

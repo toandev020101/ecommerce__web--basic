@@ -82,11 +82,233 @@
 
 .user-menu {
 	display: flex;
+	align-items: center;
 }
 
-.user-menu > li > a {
-	font-size: 28px;
+.user-menu > li {
 	margin-left: 20px;
+}
+
+.user-menu > li i {
+	font-size: 28px;
+}
+
+/* cart hover */
+.user-menu-cart {
+	position: relative;
+}
+
+.user-menu-cart-list {
+	position: absolute;
+	top: 100%;
+	right: -15px;
+	background-color: var(--white-color);
+
+	padding: 30px 0;
+	width: 400px;
+	border-radius: 2px;
+	z-index: 99;
+	text-align: center;
+
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	transform-origin: calc(100% - 20px) top;
+	animation: growth ease-in 0.3s;
+
+	max-height: 500px;
+	overflow-y: auto;
+	display: none;
+}
+
+.user-menu-cart:hover .user-menu-cart-list {
+	display: block;
+}
+
+.user-menu-cart-list::before {
+	content: '';
+	position: absolute;
+	right: 5px;
+	top: -25px;
+
+	border-width: 16px 20px;
+	border-style: solid;
+	border-color: transparent transparent var(--white-color) transparent;
+}
+
+.user-menu-cart-list.no-cart {
+	padding: 0;
+	text-align: left;
+}
+
+.user-menu-no-cart-img {
+	width: 60%;
+}
+
+.user-menu-cart-list.no-cart .user-menu-no-cart-img,
+.user-menu-cart-list.no-cart .user-menu-no-cart-text {
+	display: none;
+}
+
+.user-menu-no-cart-text {
+	display: block;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.user-menu-cart-list > h4 {
+	padding: 15px 10px;
+	color: #999;
+	font-weight: 500;
+}
+
+.user-menu-cart-list > ul > li {
+	display: flex;
+	padding: 10px 0;
+}
+
+.user-menu-cart-list > ul > li:hover {
+	background-color: #f8f8f8;
+}
+
+.user-menu-cart-item-img {
+	width: 55px;
+	height: 55px;
+	margin: 10px;
+}
+
+.user-menu-cart-item-info {
+	width: 100%;
+}
+
+.user-menu-cart-item-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+	font-size: 16px;
+}
+
+.user-menu-cart-item-head > h5 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.user-menu-cart-item-price {
+	color: var(--primary-color);
+	font-weight: 500;
+}
+
+.user-menu-cart-item-x {
+	color: #757575;
+	font-size: 14px;
+}
+
+.user-menu-cart-item-quantity {
+	color: #333;
+	margin-right: 10px;
+}
+
+.user-menu-cart-item-body {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.user-menu-cart-item-description > span {
+	display: block;
+	color: #333;
+}
+
+.user-menu-cart-item-remove {
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.user-menu-cart-item-remove:hover {
+	cursor: pointer;
+	color: var(--primary-color);
+}
+
+.user-menu-cart-view {
+	float: right;
+	margin: 10px;
+	text-transform: unset;
+}
+/* end cart hover */
+
+.user-menu-login {
+	margin-left: 20px;
+}
+
+.user-menu-login:hover,
+.user-menu-register:hover {
+	color: var(--primary-color);
+}
+
+.user-menu-auth {
+	position: relative;
+}
+
+.user-menu-info {
+	display: flex;
+	align-items: center;
+}
+
+.user-menu-info > img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.user-menu-auth > ul {
+	position: absolute;
+	left: 0;
+	top: calc(100% + 5px);
+	z-index: 99;
+
+	border-radius: 3px;
+	background-color: var(--white-color);
+	width: max-content;
+
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	transform-origin: 0 top;
+	animation: growth ease-in 0.3s;
+	display: none;
+}
+
+.user-menu-auth:hover > ul {
+	display: block;
+}
+
+.user-menu-auth > ul::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 0;
+
+	width: 100%;
+	height: 5px;
+}
+
+.user-menu-auth > ul > li > a {
+	padding: 8px 20px;
+	width: 100%;
+}
+
+.user-menu-auth > ul > li > a:hover {
+	background-color: #f8f8f8;
+}
+
+.user-menu-auth > ul > li > a:first-child {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.user-menu-auth > ul > li > a:last-child {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 .bottom-header {
@@ -529,6 +751,19 @@ footer ul li {
 	/* end mega menu */
 	/* end header */
 }
+
+/* animation */
+@keyframes growth {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+/* end animation */
 
 @media only screen and (max-width: 750px) {
 	.mb-menu__close {
