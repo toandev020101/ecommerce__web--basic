@@ -276,3 +276,26 @@ table tbody tr:hover td {
 	transform: scale(1);
 }
 /* end checkbox */
+
+/* badge */
+.badge {
+	position: relative;
+}
+
+.badge-content {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	width: 20px;
+	height: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 12px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+}
+/* end badge */
