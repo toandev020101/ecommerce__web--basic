@@ -1,0 +1,35 @@
+.news-btn {
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.news-item-img {
+	width: 100px;
+	object-fit: cover;
+}
+
+.news-item-title,
+.news-item-description {
+	max-width: 200px;
+	white-space: unset;
+}
+
+.news-item-action {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.news-item-action i {
+	font-size: 25px;
+	cursor: pointer;
+	transition: color 0.1s ease-in-out;
+}
+
+.news-item-action i:hover {
+	color: var(--primary-color);
+}
+
+.news-pagination {
+	margin-top: 20px;
+}

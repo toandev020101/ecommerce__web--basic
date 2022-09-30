@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PKShop: Sản phẩm</title>
+  <title>PKShop: Tin tức</title>
 
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="../assets/css/_base.css">
   <link rel="stylesheet" href="../assets/css/_grid.css">
   <link rel="stylesheet" href="../assets/css/admin/app.css">
-  <link rel="stylesheet" href="../assets/css/admin/products.css">
+  <link rel="stylesheet" href="../assets/css/admin/news.css">
   <!-- end main css -->
 </head>
 
@@ -48,13 +48,13 @@
             </a>
           </li>
           <li>
-            <a href="/admin/products.html" class="menu-item active" tooltip="Sản phẩm">
+            <a href="/admin/products.html" class="menu-item" tooltip="Sản phẩm">
               <i class='bx bx-shopping-bag'></i>
               <span>Sản phẩm</span>
             </a>
           </li>
           <li>
-            <a href="/admin/news.html" class="menu-item" tooltip="Tin tức">
+            <a href="/admin/news.html" class="menu-item active" tooltip="Tin tức">
               <i class='bx bxs-news'></i>
               <span>Tin tức</span>
             </a>
@@ -125,23 +125,23 @@
     <!-- end header -->
 
     <!-- products content -->
-    <div class="products content">
+    <div class="news content">
       <h2>Sản phẩm</h2>
       <div class="box">
-        <div class="products-btn">
+        <div class="news-btn">
           <button class="btn">
-            <a href="/admin/readOrAddOrEdit-product.html">Thêm mới</a>
+            <a href="/admin/readOrAddOrEdit-news.html">Thêm mới</a>
           </button>
         </div>
         <div class="sticky-table">
           <table>
             <thead>
               <tr>
-                <th>Ảnh sản phẩm</th>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Trạng thái</th>
+                <th>Ảnh đại diện</th>
+                <th>TIêu đề</th>
+                <th>Mô tả ngắn</th>
+                <th>Tác giả</th>
+                <th>Ngày đăng</th>
                 <th>Thao tác</th>
               </tr>
             </thead>
@@ -149,24 +149,24 @@
               <tr>
                 <td><img
                     src="../assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
-                    alt="" class="products-item-img"></td>
-                <td class="products-item-name">
+                    alt="" class="news-item-img"></td>
+                <td class="news-item-title">
                   Lorem ipsum dolor sit amet consectetur
                 </td>
-                <td>300,000</td>
-                <td>100</td>
+                <td class="news-item-description">Lorem ipsum dolor sit amet consectetur</td>
+                <td>Đức Toàn</td>
                 <td>
-                  <div class="box-status box-danger">Giảm giá</div>
+                  01/10/2022
                 </td>
                 <td>
-                  <div class="products-item-action">
+                  <div class="news-item-action">
                     <div class="tooltip">
-                      <a href="/admin/readOrAddOrEdit-product.html" tooltip="Xem chi tiết">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Xem chi tiết">
                         <i class='bx bx-detail'></i>
                       </a>
                     </div>
                     <div class="tooltip">
-                      <a href="/admin/readOrAddOrEdit-product.html" tooltip="Chỉnh sửa">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Chỉnh sửa">
                         <i class='bx bx-edit-alt'></i>
                       </a>
                     </div>
@@ -181,24 +181,24 @@
               <tr>
                 <td><img
                     src="../assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
-                    alt="" class="products-item-img"></td>
-                <td class="products-item-name">
+                    alt="" class="news-item-img"></td>
+                <td class="news-item-title">
                   Lorem ipsum dolor sit amet consectetur
                 </td>
-                <td>300,000</td>
-                <td>100</td>
+                <td class="news-item-description">Lorem ipsum dolor sit amet consectetur</td>
+                <td>Đức Toàn</td>
                 <td>
-                  <div class="box-status box-danger">Giảm giá</div>
+                  01/10/2022
                 </td>
                 <td>
-                  <div class="products-item-action">
+                  <div class="news-item-action">
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Xem chi tiết">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Xem chi tiết">
                         <i class='bx bx-detail'></i>
                       </a>
                     </div>
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Chỉnh sửa">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Chỉnh sửa">
                         <i class='bx bx-edit-alt'></i>
                       </a>
                     </div>
@@ -213,24 +213,24 @@
               <tr>
                 <td><img
                     src="../assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
-                    alt="" class="products-item-img"></td>
-                <td class="products-item-name">
+                    alt="" class="news-item-img"></td>
+                <td class="news-item-title">
                   Lorem ipsum dolor sit amet consectetur
                 </td>
-                <td>300,000</td>
-                <td>100</td>
+                <td class="news-item-description">Lorem ipsum dolor sit amet consectetur</td>
+                <td>Đức Toàn</td>
                 <td>
-                  <div class="box-status box-danger">Giảm giá</div>
+                  01/10/2022
                 </td>
                 <td>
-                  <div class="products-item-action">
+                  <div class="news-item-action">
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Xem chi tiết">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Xem chi tiết">
                         <i class='bx bx-detail'></i>
                       </a>
                     </div>
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Chỉnh sửa">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Chỉnh sửa">
                         <i class='bx bx-edit-alt'></i>
                       </a>
                     </div>
@@ -245,24 +245,24 @@
               <tr>
                 <td><img
                     src="../assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
-                    alt="" class="products-item-img"></td>
-                <td class="products-item-name">
+                    alt="" class="news-item-img"></td>
+                <td class="news-item-title">
                   Lorem ipsum dolor sit amet consectetur
                 </td>
-                <td>300,000</td>
-                <td>100</td>
+                <td class="news-item-description">Lorem ipsum dolor sit amet consectetur</td>
+                <td>Đức Toàn</td>
                 <td>
-                  <div class="box-status box-danger">Giảm giá</div>
+                  01/10/2022
                 </td>
                 <td>
-                  <div class="products-item-action">
+                  <div class="news-item-action">
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Xem chi tiết">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Xem chi tiết">
                         <i class='bx bx-detail'></i>
                       </a>
                     </div>
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Chỉnh sửa">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Chỉnh sửa">
                         <i class='bx bx-edit-alt'></i>
                       </a>
                     </div>
@@ -277,24 +277,24 @@
               <tr>
                 <td><img
                     src="../assets/images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png"
-                    alt="" class="products-item-img"></td>
-                <td class="products-item-name">
+                    alt="" class="news-item-img"></td>
+                <td class="news-item-title">
                   Lorem ipsum dolor sit amet consectetur
                 </td>
-                <td>300,000</td>
-                <td>100</td>
+                <td class="news-item-description">Lorem ipsum dolor sit amet consectetur</td>
+                <td>Đức Toàn</td>
                 <td>
-                  <div class="box-status box-danger">Giảm giá</div>
+                  01/10/2022
                 </td>
                 <td>
-                  <div class="products-item-action">
+                  <div class="news-item-action">
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Xem chi tiết">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Xem chi tiết">
                         <i class='bx bx-detail'></i>
                       </a>
                     </div>
                     <div class="tooltip">
-                      <a href="/admin/readOraddOrEdit.html" tooltip="Chỉnh sửa">
+                      <a href="/admin/readOrAddOrEdit-news.html" tooltip="Chỉnh sửa">
                         <i class='bx bx-edit-alt'></i>
                       </a>
                     </div>
@@ -309,7 +309,7 @@
             </tbody>
           </table>
         </div>
-        <ul class="pagination products-pagination">
+        <ul class="pagination news-pagination">
           <li><a href="#"><i class='bx bxs-chevron-left'></i></a></li>
           <li><a href="#" class="active">1</a></li>
           <li><a href="#">2</a></li>
