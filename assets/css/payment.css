@@ -50,6 +50,7 @@ div.payment-user-info-address > input {
 div.payment-user-info-note > textarea {
 	width: 100%;
 	height: 150px;
+	font-size: 16px;
 
 	outline: 0;
 	padding: 10px;
